@@ -62,12 +62,21 @@
         
     </div>
         <!-- featured Products-->
+        
     <div class="small-container">
+        {% if products %}
         <h2 class="title">Featured products</h2>
         <div class="row">
+
+            {% for product in products %}
             <div class="col1">
-                <img src="{% static 'assets/images/faith-yarn-Wr0TpKqf26s-unsplash.jpg' %}" alt="">
-                <h4>Black printed T-shirt</h4> <!--font awesome 4 cdn, then copy the url-->
+                {% for image in product.image_set.all %}
+             
+                {% if image.poster %}
+                <img src="{{image.image.url}}" alt="">
+                {% endif %}
+                {% endfor %}
+                <h4>{{product.name}}</h4> <!--font awesome 4 cdn, then copy the url-->
                 <div class="rating"> <!--font awesome 4 icons, then copy the url-->
                      <i class="fa fa-star"></i>
                      <i class="fa fa-star"></i>
@@ -75,45 +84,12 @@
                      <i class="fa fa-star"></i>
                      <i class="fa fa-star-o"></i>
                 </div>
-                <p>Ksh500.00</p>
+                <p>Ksh {{product.price}}</p>
             </div>
-            <div class="col1">
-                <img src="{% static 'assets/images/malik-skydsgaard-3we24FcjVAk-unsplash.jpg' %}" alt="">
-                <h4>Ladies Corduroy Pants</h4> <!--font awesome 4 cdn, then copy the url-->
-                <div class="rating"> <!--font awesome 4 icons, then copy the url-->
-                     <i class="fa fa-star"></i>
-                     <i class="fa fa-star"></i>
-                     <i class="fa fa-star"></i>
-                     <i class="fa fa-star"></i>
-                     <i class="fa fa-star-o"></i>
-                </div>
-                <p>Ksh800.00</p>
-            </div>
-            <div class="col1">
-                <img src="{% static 'assets/images/aleksei-zaitcev-udZ0HOhgzF0-unsplash.jpg' %}" alt="">
-                <h4>Asian Style Kimono</h4> <!--font awesome 4 cdn, then copy the url-->
-                <div class="rating"> <!--font awesome 4 icons, then copy the url-->
-                     <i class="fa fa-star"></i>
-                     <i class="fa fa-star"></i>
-                     <i class="fa fa-star"></i>
-                     <i class="fa fa-star"></i>
-                     <i class="fa fa-star-o"></i>
-                </div>
-                <p>Ksh300.00</p>
-            </div>
-            <div class="col1">
-                <img src="{% static 'assets/images/ryan-plomp-jvoZ-Aux9aw-unsplash.jpg' %}" alt="">
-                <h4>Customized Nike Airfoce</h4> <!--font awesome 4 cdn, then copy the url-->
-                <div class="rating"> <!--font awesome 4 icons, then copy the url-->
-                     <i class="fa fa-star"></i>
-                     <i class="fa fa-star"></i>
-                     <i class="fa fa-star"></i>
-                     <i class="fa fa-star"></i>
-                     <i class="fa fa-star-half-o"></i>
-                </div>
-                <p>ksh2000.00</p>
-            </div>
+            {% endfor %}
+           
         </div>
+        {% endif %}
         <h2 class="title">Latest products</h2>
         <div class="row">
             <div class="col1">
@@ -280,6 +256,7 @@
         </div>
     </div>
 </div>
+
 <!--Brands-->
 <div class="brands">
     <div class="small-container">
