@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+{% load static %}
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Nesca | Urban Wear</title>
+	<link rel="stylesheet" type="text/css" href="{% static 'assets/css/style.css' %}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,600;1,300;1,500;1,600&display=swap" rel="stylesheet">
+
+</head>
+<body>
+	<div class="header">
+		<div class="container">
+			<div class="navbar">
+				<div class="logo">
+				 <img src="assets/images/Nesca.png" width= "50px" alt="">
+				</div>
+				<nav>
+					<ul id="menuItems">
+						<li><a href="#">Home</a></li>
+						<li><a href="#">About</a></li>
+						<li><a href="#">Product</a></li>
+						<li><a href="#">Contact us</a></li>
+						<li><a href="#">Sign up</a></li>
+					</ul>
+				</nav>
+				<i class="fa fa-shopping-cart" style="font-size:24px"; color:blue></i>
+                <img src="assets/images/menu.png" height="18px" class="menu-icon" onclick="menutoggle()">
+			</div>
+			<div class="row">
+            <div class="col">
+                <h1> Want to do Fashion?<br> Nesca is Fashion!</h1>
+                <p>STYLE is a way to say who you are without having to speak and <br> FASHION is the armor to survive the reality of everyday!</p>
+                <a href="" class="btn">More &#8594;</a> <!-- html icon codes/toptal.com-->
+            </div>
+            <div class="col">
+                <img src="{% static 'assets/images/alexander-kovacs-GMGdhtYeROY-unsplash.jpg' %}" alt="">
+
+            </div>
+        </div>
+		</div>
+		
+	</div>
+    <!--Featured Categories-->
+    <div class="categories">
+        <div class="small-container">
+            <div class="row">
+            <div class="col-3">
+                <img src="{% static 'assets/images/freestocks-_3Q3tsJ01nc-unsplash.jpg' %}" alt="">
+            </div>
+            <div class="col-3">
+                <img src="{% static 'assets/images/firmbee-com-SpVHcbuKi6E-unsplash.jpg' %}" alt="">
+            </div>
+            <div class="col-3">
+                <img src="{% static 'assets/images/pexels-pixabay-259200.jpg' %}" alt="">
+            </div>
+         </div>
+        </div>
+        
+    </div>
+        <!-- featured Products-->
+    <div class="small-container">
+        <h2 class="title">Featured products</h2>
+        <div class="row">
+            <div class="col1">
+                <img src="{% static 'assets/images/faith-yarn-Wr0TpKqf26s-unsplash.jpg' %}" alt="">
+                <h4>Black printed T-shirt</h4> <!--font awesome 4 cdn, then copy the url-->
+                <div class="rating"> <!--font awesome 4 icons, then copy the url-->
+                     <i class="fa fa-star"></i>
+                     <i class="fa fa-star"></i>
+                     <i class="fa fa-star"></i>
+                     <i class="fa fa-star"></i>
+                     <i class="fa fa-star-o"></i>
+                </div>
+                <p>Ksh500.00</p>
+            </div>
+            <div class="col1">
+                <img src="{% static 'assets/images/malik-skydsgaard-3we24FcjVAk-unsplash.jpg' %}" alt="">
+                <h4>Ladies Corduroy Pants</h4> <!--font awesome 4 cdn, then copy the url-->
+                <div class="rating"> <!--font awesome 4 icons, then copy the url-->
+                     <i class="fa fa-star"></i>
+                     <i class="fa fa-star"></i>
+                     <i class="fa fa-star"></i>
+                     <i class="fa fa-star"></i>
+                     <i class="fa fa-star-o"></i>
+                </div>
+                <p>Ksh800.00</p>
+            </div>
+            <div class="col1">
+                <img src="{% static 'assets/images/aleksei-zaitcev-udZ0HOhgzF0-unsplash.jpg' %}" alt="">
+                <h4>Asian Style Kimono</h4> <!--font awesome 4 cdn, then copy the url-->
+                <div class="rating"> <!--font awesome 4 icons, then copy the url-->
+                     <i class="fa fa-star"></i>
+                     <i class="fa fa-star"></i>
+                     <i class="fa fa-star"></i>
+                     <i class="fa fa-star"></i>
+                     <i class="fa fa-star-o"></i>
+                </div>
+                <p>Ksh300.00</p>
+            </div>
+            <div class="col1">
+                <img src="{% static 'assets/images/ryan-plomp-jvoZ-Aux9aw-unsplash.jpg' %}" alt="">
+                <h4>Customized Nike Airfoce</h4> <!--font awesome 4 cdn, then copy the url-->
+                <div class="rating"> <!--font awesome 4 icons, then copy the url-->
+                     <i class="fa fa-star"></i>
+                     <i class="fa fa-star"></i>
+                     <i class="fa fa-star"></i>
+                     <i class="fa fa-star"></i>
+                     <i class="fa fa-star-half-o"></i>
+                </div>
+                <p>ksh2000.00</p>
+            </div>
+        </div>
+        <h2 class="title">Latest products</h2>
+        <div class="row">
+            <div class="col1">
+                <img src="{% static 'assets/images/travis-essinger-iOv3CqiZLtE-unsplash.jpg' %}" alt="">
+                <h4>Black printed T-shirt</h4> <!--font awesome 4 cdn, then copy the url-->
+                <div class="rating"> <!--font awesome 4 icons, then copy the url-->
+                     <i class="fa fa-star"></i>
+                     <i class="fa fa-star"></i>
+                     <i class="fa fa-star"></i>
+                     <i class="fa fa-star"></i>
+                     <i class="fa fa-star-o"></i>
+                </div>
+                <p>Ksh500.00</p>
+            </div>
+            <div class="col1">
+                <img src="{% static 'assets/images/toa-heftiba-mavrg7cLwbA-unsplash.jpg' %}" alt="">
+                <h4>Ladies Corduroy Pants</h4> <!--font awesome 4 cdn, then copy the url-->
+                <div class="rating"> <!--font awesome 4 icons, then copy the url-->
+                     <i class="fa fa-star"></i>
+                     <i class="fa fa-star"></i>
+                     <i class="fa fa-star"></i>
+                     <i class="fa fa-star"></i>
+                     <i class="fa fa-star-o"></i>
+                </div>
+                <p>Ksh800.00</p>
+            </div>
+            <div class="col1">
+                <img src="{% static 'assets/images/paul-cuoco-gVuxWHe1-IY-unsplash.jpg' %}" alt="">
+                <h4>Asian Style Kimono</h4> <!--font awesome 4 cdn, then copy the url-->
+                <div class="rating"> <!--font awesome 4 icons, then copy the url-->
+                     <i class="fa fa-star"></i>
+                     <i class="fa fa-star"></i>
+                     <i class="fa fa-star"></i>
+                     <i class="fa fa-star"></i>
+                     <i class="fa fa-star-o"></i>
+                </div>
+                <p>Ksh300.00</p>
+            </div>
+            <div class="col1">
+                <img src="{% static 'assets/images/tobias-tullius-Fg15LdqpWrs-unsplash.jpg' %}" alt="">
+                <h4>Customized Nike Airfoce</h4> <!--font awesome 4 cdn, then copy the url-->
+                <div class="rating"> <!--font awesome 4 icons, then copy the url-->
+                     <i class="fa fa-star"></i>
+                     <i class="fa fa-star"></i>
+                     <i class="fa fa-star"></i>
+                     <i class="fa fa-star"></i>
+                     <i class="fa fa-star-half-o"></i>
+                </div>
+                <p>ksh2000.00</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col1">
+                <img src="{% static 'assets/images/sam-moghadam-khamseh-kvmdsTrGOBM-unsplash.jpg' %}" alt="">
+                <h4>Black printed T-shirt</h4> <!--font awesome 4 cdn, then copy the url-->
+                <div class="rating"> <!--font awesome 4 icons, then copy the url-->
+                     <i class="fa fa-star"></i>
+                     <i class="fa fa-star"></i>
+                     <i class="fa fa-star"></i>
+                     <i class="fa fa-star"></i>
+                     <i class="fa fa-star-o"></i>
+                </div>
+                <p>Ksh500.00</p>
+            </div>
+            <div class="col1">
+                <img src="{% static 'assets/images/sincerely-media-VDPauwJ_sHo-unsplash.jpg' %}" alt="">
+                <h4>Ladies Corduroy Pants</h4> <!--font awesome 4 cdn, then copy the url-->
+                <div class="rating"> <!--font awesome 4 icons, then copy the url-->
+                     <i class="fa fa-star"></i>
+                     <i class="fa fa-star"></i>
+                     <i class="fa fa-star"></i>
+                     <i class="fa fa-star"></i>
+                     <i class="fa fa-star-o"></i>
+                </div>
+                <p>Ksh800.00</p>
+            </div>
+            <div class="col1">
+                <img src="{% static 'assets/images/onur-binay-kQPw_UieMJQ-unsplash.jpg' %}" alt="">
+                <h4>Asian Style Kimono</h4> <!--font awesome 4 cdn, then copy the url-->
+                <div class="rating"> <!--font awesome 4 icons, then copy the url-->
+                     <i class="fa fa-star"></i>
+                     <i class="fa fa-star"></i>
+                     <i class="fa fa-star"></i>
+                     <i class="fa fa-star"></i>
+                     <i class="fa fa-star-o"></i>
+                </div>
+                <p>Ksh300.00</p>
+            </div>
+            <div class="col1">
+                <img src="{% static 'assets/images/irene-kredenets-pSVYyO-XlJk-unsplash.jpg' %}" alt="">
+                <h4>Customized Nike Airfoce</h4> <!--font awesome 4 cdn, then copy the url-->
+                <div class="rating"> <!--font awesome 4 icons, then copy the url-->
+                     <i class="fa fa-star"></i>
+                     <i class="fa fa-star"></i>
+                     <i class="fa fa-star"></i>
+                     <i class="fa fa-star"></i>
+                     <i class="fa fa-star-half-o"></i>
+                </div>
+                <p>ksh2000.00</p>
+            </div>
+        </div>
+    </div>
+<!--Offer-->
+<div class="offer">
+    <div class="small-container">
+        <div class="row">
+            <div class="col1">
+                <img src="{% static 'assets/images/olena-sergienko-InlMkMNlrhY-unsplash.jpg' %}" class="offer-img" alt="">
+            </div>
+            <div class="col1">
+                <p>Exclusively available on Nesca|Store</p>
+                <h1> Smart Band4</h1>
+                <small>The Mi Smart Band features a 39.9% (larger than other smart bands) Amoled color full touch display with adjustable brightness making everything clear.</small><br>
+                <a href="" class="btn">Buy Now &#8594;</a>
+            </div>
+        </div>
+</div>
+<!--testimonial-->
+<div class="testimonial">
+    <div class="small-container">
+        <div class="row">
+            <div class="col-3">
+                <i class="fa fa-quote-left" aria-hidden="true"></i>
+                <p>Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content.</p>
+                <div class="rating"> <!--font awesome 4 icons, then copy the url-->
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+
+               </div>
+               <img src="{% static 'assets/images/owayo.jpg' %}"  alt="">
+               <h3>Owayo Paul</h3>
+            </div>
+            <div class="col-3">
+                <i class="fa fa-quote-left" aria-hidden="true"></i>
+                <p>Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content.</p>
+                <div class="rating"> <!--font awesome 4 icons, then copy the url-->
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+
+               </div>
+               <img src="{% static 'assets/images/BahaMarvoRayo.jpg' %}" alt="">
+               <h3>Baha, Marvo & Rayo</h3>
+            </div>
+            <div class="col-3">
+                <i class="fa fa-quote-left" aria-hidden="true"></i>
+                <p>Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content.</p>
+                <div class="rating"> <!--font awesome 4 icons, then copy the url-->
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+
+               </div>
+               <img src="{% static 'assets/images/onyato.jpg' %}" alt="">
+               <h3>Derrick Kenyatta</h3>
+            </div>
+        </div>
+    </div>
+</div>
+<!--Brands-->
+<div class="brands">
+    <div class="small-container">
+        <div class="row">
+            <div class="col-5">
+                <img src="{% static 'assets/images/logo-godrej.png' %}" alt="">
+            </div>
+            <div class="col-5">
+                <img src="{% static 'assets/images/logo-oppo.png' %}" alt="">
+            </div>
+            <div class="col-5">
+                <img src="{% static 'assets/images/logo-coca-cola.png' %}" alt="">
+            </div>
+            <div class="col-5">
+                <img src="{% static 'assets/images/logo-paypal.png' %}" alt="">
+            </div>
+            <div class="col-5">
+                <img src="{% static 'assets/images/logo-philips.png' %}" alt="">
+            </div>
+        </div>
+    </div>
+</div>
+<!--footer-->
+<div class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="footer-col1">
+                 <h3>Download our app</h3>
+                 <p>Download our app for Android and iOs mobile phones</p>
+                 <div class="app-logo">
+                    <img src="{% static 'assets/images/play-store.png' %}" alt="">
+                    <img src="{% static 'assets/images/app-store.png' %}" alt="">
+                 </div>
+            </div>
+            <div class="footer-col2">
+                <img src="{% static 'assets/images/logo-white.png' %}" alt="">
+                <p>Our purpose is to sustainably make the pleasure<br>and benefits of good style & fashion accessible to all</p>
+            </div>
+            <div class="footer-col3">
+                <h3>Useful links </h3>
+                <ul>
+                        <li>Coupons</li>
+                        <li>Blog Post</li>
+                        <li>Return policy</li>
+                        <li>Join Affiliate</li> 
+                </ul>
+            </div>
+             <div class="footer-col4">
+                 <h3>Follow us</h3>
+                 <ul>
+                    <li>Facebook</li>
+                    <li>Twitter</li>
+                    <li>Instagram</li>
+                    <li>YouTube</li> 
+                </ul>
+            </div>
+        </div>
+        <hr>
+        <p class = "copyright">Copyright 2022 - Easy Tutorials</p>
+    </div>
+</div>
+<!--js for toggle menu-->
+<script>
+    var menuItems = document.getElementById("menuItems");
+    menuItems.style.maxHeight = "0px";
+    function menutoggle(){
+        if(menuItems.style.maxHeight == "0px"){
+            menuItems.style.maxHeight = "200px"
+        }
+        else{
+            menuItems.style.maxHeight = "0px"
+        }
+
+    }
+</script>
+
+</body>
+</html>
